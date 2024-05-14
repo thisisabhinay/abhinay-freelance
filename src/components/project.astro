@@ -4,14 +4,16 @@ const { name, description, url, image } = Astro.props
 
 <a
   href={url}
-  target="_blank"
   class="relative flex flex-col items-stretch p-7 sm:p-3 group h-100 rounded-2xl"
 >
   <div
     class="relative p-3 z-30 block inset-0 w-full h-full rounded-2xl hover-fx"
   >
     <span class="block w-full">
-      <img src={image} class="w-full h-auto rounded-lg" />
+      <img
+        src={image}
+        class="w-full h-32 rounded-xl object-cover transition-all duration-300 ease-out group-hover:scale-125 group-hover:-translate-y-4 group-hover:shadow-lg"
+      />
     </span>
     <span class="block w-full px-1 mt-5 mb-1 sm:mt-3">
       <span

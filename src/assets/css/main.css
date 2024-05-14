@@ -67,7 +67,11 @@ html.dark #darkToggle:hover .horizon {
 
 @layer utilities {
   .hover-fx {
-    @apply duration-300 ease-out border border-solid border-neutral-300 dark:border-neutral-600 group-hover:ring-4 group-hover:ring-neutral-100 dark:group-hover:ring-neutral-800;
+    @apply duration-300 ease-out border border-solid border-neutral-300 dark:border-neutral-600 group-hover:ring-4 group-hover:ring-neutral-50 dark:group-hover:ring-neutral-800;
+  }
+
+  .hover-fx--no-ring {
+    @apply hover-fx group-hover:ring-0;
   }
 
   .btn {
