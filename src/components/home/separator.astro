@@ -1,5 +1,5 @@
 ---
-const { text } = Astro.props;
+const { text } = Astro.props
 ---
 
 <div class="relative my-32">
@@ -9,7 +9,7 @@ const { text } = Astro.props;
     >
     </div>
     <div
-      class="w-full h-px border-t border-dashed border-neutral-300 dark:border-neutral-600"
+      class="w-full h-px border-t border-solid border-neutral-300 dark:border-neutral-600"
     >
     </div>
   </div>
@@ -27,11 +27,14 @@ const { text } = Astro.props;
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        ><path
+      >
+        <path
           stroke-linecap="round"
           stroke-linejoin="round"
-          d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"></path></svg
-      >
+          d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+        >
+        </path>
+      </svg>
     </div>
   </div>
 </div>

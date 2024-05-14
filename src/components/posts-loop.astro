@@ -1,20 +1,20 @@
 ---
-import posts from "../collections/content/post.json";
+import posts from "../collections/content/post.json"
 
-const { count } = Astro.props;
+const { count } = Astro.props
 
-const postsLoop = posts.slice(0, count);
+const postsLoop = posts.slice(0, count)
 ---
 
 {
   postsLoop.map((post) => {
     return (
       <div
-        class="relative border border-transparent border-dashed cursor-pointer p-7 group rounded-2xl"
+        class="relative border border-transparent border-solid cursor-pointer p-7 group rounded-2xl"
         onclick={`location.href = '${post.link}'`}
       >
-        <div class="absolute inset-0 z-20 w-full h-full duration-300 ease-out bg-white border border-dashed dark:bg-neutral-950 rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1" />
-        <div class="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1" />
+        <div class="absolute inset-0 z-20 w-full h-full duration-300 ease-out bg-white border border-solid dark:bg-neutral-950 rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1" />
+        <div class="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-solid rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1" />
         <div class="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1">
           <h2 class="flex items-center mb-3">
             <a
