@@ -7,16 +7,8 @@ const { name, description, url, image } = Astro.props
   target="_blank"
   class="relative flex flex-col items-stretch duration-300 ease-out p-7 sm:p-3 group h-100 rounded-2xl"
 >
-  <span
-    class="absolute inset-0 z-20 block w-full h-full duration-300 ease-out bg-transparent border border-transparent border-solid group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:border group-hover:border-neutral-300 dark:group-hover:border-neutral-600 group-hover:border-solid rounded-2xl group-hover:bg-white dark:group-hover:bg-neutral-950"
-  >
-  </span>
-  <span
-    class="absolute inset-0 z-10 block w-full h-full duration-300 ease-out border border-solid rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1"
-  >
-  </span>
-  <span
-    class="relative z-30 block duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1"
+  <div
+    class="relative p-3 z-30 block duration-300 ease-out inset-0 w-full h-full rounded-2xl hover-fx"
   >
     <span class="block w-full">
       <img src={image} class="w-full h-auto rounded-lg" />
@@ -69,5 +61,5 @@ const { name, description, url, image } = Astro.props
         {description}
       </span>
     </span>
-  </span>
+  </div>
 </a>
