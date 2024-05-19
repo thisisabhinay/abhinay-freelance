@@ -3,11 +3,11 @@ import { Picture } from "astro:assets"
 
 const { name, description, slug, image, company, layout = "card" } = Astro.props
 
-const baseStyle = "p-5 w-full h-full rounded-2xl hover-fx justify-between"
+const baseStyle = "p-5 w-full h-full rounded-2xl hover-fx"
 
 const layoutStyle: any = {
   card: "flex flex-col gap-3",
-  list: "flex flex-row-reverse gap-3",
+  list: "flex flex-row-reverse gap-3 justify-between",
 }
 
 const hoverStyle: any = {
@@ -23,6 +23,11 @@ const coverSize: any = {
 const headingStyle: any = {
   card: "text-base",
   list: "text-lg",
+}
+
+const clampStyle: any = {
+  card: "line-clamp-5 md:line-clamp-3",
+  list: "line-clamp-4 md:line-clamp-5 lg:line-clamp-6",
 }
 ---
 
@@ -88,7 +93,10 @@ const headingStyle: any = {
       <div class="text-sm text-neutral-900 font-medium dark:text-neutral-400">
         {company}
       </div>
-      <div class="text-sm text-neutral-600 dark:text-neutral-400">
+      <div
+        class="text-sm text-neutral-600 dark:text-neutral-400"
+        class:list={[clampStyle[layout]]}
+      >
         {description}
       </div>
     </div>
