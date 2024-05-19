@@ -2,6 +2,7 @@
 import PageHeading from "../../components/page-heading.astro"
 import ListProjects from "../../components/list-projects.astro"
 import Layout from "../../layouts/main.astro"
+import companies from "../../data/companies.json"
 ---
 
 <Layout title="Portfolio">
@@ -11,10 +12,10 @@ import Layout from "../../layouts/main.astro"
       description="I'm passionate about bringing new ideas to life through innovative projects. This portfolio page showcases some of my most recent works, highlighting my creativity and technical skills."
     />
 
-    <div
-      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-10 sm:grid-cols-2"
-    >
-      <ListProjects />
-    </div>
+    {
+      companies?.map(({ name, logo }) => (
+        <ListProjects company={name} brandLogo={logo} />
+      ))
+    }
   </section>
 </Layout>

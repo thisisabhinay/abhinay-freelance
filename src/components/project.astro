@@ -1,30 +1,48 @@
 ---
-const {
-  name,
-  description,
-  slug,
-  image,
-  company,
-  coverHeight = "",
-} = Astro.props
+import { Picture } from "astro:assets"
+
+const { name, description, slug, image, company, layout = "card" } = Astro.props
+
+const baseStyle = "p-5 w-full h-full rounded-2xl hover-fx justify-between"
+
+const layoutStyle: any = {
+  card: "flex flex-col gap-3",
+  list: "flex flex-row-reverse gap-3",
+}
+
+const hoverStyle: any = {
+  card: "group-hover:shadow-lg group-hover:-translate-y-1",
+  list: "group-hover:shadow-lg group-hover:translate-x-1",
+}
+
+const coverSize: any = {
+  card: "w-full h-48 md:h-36",
+  list: "w-full h-48 md:h-44",
+}
+
+const headingStyle: any = {
+  card: "text-base",
+  list: "text-lg",
+}
 ---
 
 <a
+  data-layout={layout}
   href={`project/${slug}`}
-  class="relative flex flex-col items-stretch group h-100 rounded-2xl"
+  class="relative flex flex-col w-full items-stretch group h-100 rounded-2xl"
 >
-  <div
-    class="relative p-3 z-30 block inset-0 w-full h-full rounded-2xl hover-fx"
-  >
-    <span class="block w-full">
+  <div class:list={[baseStyle, layoutStyle[layout]]}>
+    <div class="block w-full">
       <img
         src={image}
-        class=`w-full h-48 md:h-36 rounded-xl object-cover transition-all duration-300 ease-out  group-hover:-translate-y-1 group-hover:shadow-lg ${coverHeight}`
+        class=`rounded-xl object-cover transition-all duration-300 ease-out`
+        class:list={[hoverStyle[layout], coverSize[layout]]}
       />
-    </span>
-    <div class="block w-full divide-y-4 divide-transparent mt-4">
+    </div>
+    <div class="block w-full divide-y-4 divide-transparent">
       <div
-        class="flex relative items-center mb-0 text-base font-semibold tracking-tight text-neutral-900 dark:text-neutral-100"
+        class="flex relative items-center mb-0 font-semibold tracking-tight text-neutral-900 dark:text-neutral-100"
+        class:list={[headingStyle[layout]]}
       >
         <div>{name}</div>
         <svg
