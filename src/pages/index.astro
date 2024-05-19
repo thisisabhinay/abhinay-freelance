@@ -17,22 +17,23 @@ import Layout from "../layouts/main.astro"
         >
           Hello, I'm Abhinay.
         </h1>
+        <h2
+          class="font-semibold mb-6 text-lg text-neutral-600 dark:text-neutral-400"
+        >
+          Sr. Frontend Engineer | Building High-Performance, User-Friendly Web
+          Apps
+        </h2>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          I'm a Sr. Frontend Engineer on a mission to create web applications
-          that seamlessly blend performance and aesthetics. Leveraging
-          cutting-edge technologies and a user-centric approach.
-          <span
-            class="underline font-semibold underline-offset-4 dark:decoration-gray-600 decoration-gray-300"
-          >
-            I help businesses build scalable, responsive, and secure frontend
-            architectures
-          </span>.
+          I'm a Senior Frontend Engineer passionate about crafting web
+          applications that excel in both speed and design. I utilize the latest
+          technologies and prioritize a user-centric approach to build scalable,
+          responsive, and secure frontend architectures for businesses.
         </p>
-        <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          If you're looking to enhance your web app, I'm here to make it happen.
-        </p>
-        <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
-          I can help you out with:
+
+        <p class="mb-2 text-base text-neutral-600 dark:text-neutral-400">
+          <span class="font-medium">
+            Looking to elevate your web app's performance and user experience?
+          </span> I can help you achieve that.
         </p>
         <ul
           class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
@@ -83,7 +84,7 @@ import Layout from "../layouts/main.astro"
   </div>
 
   <Separator text="Check out my projects" />
-  <Projects />
+  <Projects count="3" />
   <Separator text="Some of my writing" />
   <Writings />
 </Layout>

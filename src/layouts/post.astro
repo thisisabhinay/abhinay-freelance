@@ -1,9 +1,9 @@
 ---
-import Layout from "./main.astro";
-const { frontmatter } = Astro.props;
+import MainLayout from "./main.astro"
+const { frontmatter } = Astro.props
 ---
 
-<Layout title={frontmatter.title}>
+<MainLayout title={frontmatter.title}>
   <main
     class="relative z-30 max-w-4xl pb-1 mx-auto mt-10 bg-white dark:bg-neutral-950 md:rounded-t-md text-neutral-900"
   >
@@ -31,4 +31,4 @@ const { frontmatter } = Astro.props;
       <slot />
     </article>
   </main>
-</Layout>
+</MainLayout>
