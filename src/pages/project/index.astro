@@ -1,0 +1,38 @@
+---
+import projects from "../../data/projects.json"
+import PageHeading from "../../components/page-heading.astro"
+import Project from "../../components/project.astro"
+import Layout from "../../layouts/main.astro"
+
+const { count } = Astro.props
+
+const projectsList = projects.slice(0, count)
+---
+
+<Layout title="Portfolio">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="Portfolio"
+      description="I'm passionate about bringing new ideas to life through innovative projects. This portfolio page showcases some of my most recent works, highlighting my creativity and technical skills."
+    />
+
+    <div
+      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-10 sm:grid-cols-2"
+    >
+      {
+        projectsList.map((project) => {
+          return (
+            <Project
+              name={project.name}
+              description={project.description}
+              image={project.image}
+              url={project.url}
+              company={project.company}
+              coverHeight="md:h-44"
+            />
+          )
+        })
+      }
+    </div>
+  </section>
+</Layout>
