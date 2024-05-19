@@ -1,6 +1,6 @@
 ---
 title: "SA Talento"
-description: "Modern career coaching landing built with Astro.js."
+description: "Modern career coaching landing page built with Astro.js."
 publishDate: "2023-07-15T16:39:36.050Z"
 image: "/assets/project/sa-talento/cover.avif"
 company: "SA Telento"
