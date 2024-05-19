@@ -22,9 +22,9 @@ const BlogPosts = defineCollection({
 const Projects = defineCollection({
   schema: z.object({
     title: z.string(),
-    excerpt: z.string(),
-    category: z.string().trim(),
+    description: z.string(),
     author: z.string().trim(),
+    company: z.string().trim(),
     draft: z.boolean().optional(),
     tags: z.array(z.string()),
     image: z.string().optional(),
