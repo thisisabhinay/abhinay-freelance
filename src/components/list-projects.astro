@@ -1,23 +1,35 @@
 ---
 import { latestProjects } from "../utils/projects"
 import Project from "../components/project.astro"
+import BrandSeparator from "../components/brand-separator.astro"
 
-const { count } = Astro.props
+const { count, company, brandLogo, className = "" } = Astro.props
 
-const projectsList = count ? latestProjects.slice(0, count) : latestProjects
+let projectsList
+projectsList = company
+  ? latestProjects.filter((project) => project.data.company === company)
+  : latestProjects
+
+projectsList = count ? projectsList.slice(0, count) : projectsList
 ---
 
-{
-  projectsList.map((project) => {
-    return (
-      <Project
-        name={project.data.title}
-        description={project.data.description}
-        image={project.data.image}
-        company={project.data.company}
-        slug={project.slug}
-        coverHeight="md:h-44"
-      />
-    )
-  })
-}
+{company ? <BrandSeparator text={company} brandLogo={brandLogo} /> : null}
+<div
+  class="grid items-stretch w-full grid-cols-1 gap-7"
+  class:list={[className]}
+>
+  {
+    projectsList.map((project) => {
+      return (
+        <Project
+          name={project.data.title}
+          description={project.data.description}
+          image={project.data.image}
+          company={project.data.company}
+          slug={project.slug}
+          layout="list"
+        />
+      )
+    })
+  }
+</div>
