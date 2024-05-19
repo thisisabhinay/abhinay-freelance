@@ -3,7 +3,7 @@ title: "AI Copywriting Tool"
 description: "Automated copywriting with built-in AI & SEO."
 publishDate: "2023-07-13T13:39:36.050Z"
 image: "/assets/project/attryb-studio/cover.png"
-company: "HighLevel"
+company: "Attryb"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 ---
