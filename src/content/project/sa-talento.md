@@ -1,14 +1,14 @@
 ---
-title: "LC Phone System"
-description: "Scalable lead capture phone system using microfrontends."
-publishDate: "2023-07-14T16:39:36.050Z"
-image: "/assets/project/hl-microfrontend/cover.png"
-company: "HighLevel"
+title: "SA Talento"
+description: "Modern career coaching landing built with Astro.js."
+publishDate: "2023-07-15T16:39:36.050Z"
+image: "/assets/project/sa-talento/cover.avif"
+company: "SA Telento"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 ---
 
-![Writing Less, Achieve More](/assets/project/hl-microfrontend/cover.png)
+![Writing Less, Achieve More](/assets/project/sa-talento/cover.avif)
 
 <span class="text-3xl font-bold">A</span>s a senior software engineer focused on web development and front-end design, I often find myself immersed in a world that goes beyond mere lines of code. It's a realm where creativity and logic intertwine, where the boundaries between art and science blur. When I sit down to write code for web applications, I'm not just solving problems; I'm creating something that has the potential to touch lives and shape online experiences.
 

@@ -1,14 +1,14 @@
 ---
-title: "LC Phone System"
-description: "Scalable lead capture phone system using microfrontends."
-publishDate: "2023-07-14T16:39:36.050Z"
-image: "/assets/project/hl-microfrontend/cover.png"
+title: "AI Copywriting Tool"
+description: "Automated copywriting with built-in AI & SEO."
+publishDate: "2023-07-13T13:39:36.050Z"
+image: "/assets/project/attryb-studio/cover.png"
 company: "HighLevel"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 ---
 
-![Writing Less, Achieve More](/assets/project/hl-microfrontend/cover.png)
+![Writing Less, Achieve More](/assets/project/attryb-studio/cover.png)
 
 <span class="text-3xl font-bold">A</span>s a senior software engineer focused on web development and front-end design, I often find myself immersed in a world that goes beyond mere lines of code. It's a realm where creativity and logic intertwine, where the boundaries between art and science blur. When I sit down to write code for web applications, I'm not just solving problems; I'm creating something that has the potential to touch lives and shape online experiences.
 

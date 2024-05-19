@@ -1,9 +1,9 @@
 ---
-title: "LC Phone System"
-description: "Scalable lead capture phone system using microfrontends."
-publishDate: "2023-07-14T16:39:36.050Z"
-image: "/assets/project/hl-microfrontend/cover.png"
-company: "HighLevel"
+title: "No-Code CRM Platform"
+description: "Build & share custom CRM workflows in the cloud."
+publishDate: "2023-07-09T11:39:36.050Z"
+image: "/assets/project/orgzit/cover.png"
+company: "Orgzit"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 ---
