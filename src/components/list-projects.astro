@@ -1,0 +1,23 @@
+---
+import { latestProjects } from "../utils/projects"
+import Project from "../components/project.astro"
+
+const { count } = Astro.props
+
+const projectsList = count ? latestProjects.slice(0, count) : latestProjects
+---
+
+{
+  projectsList.map((project) => {
+    return (
+      <Project
+        name={project.data.title}
+        description={project.data.description}
+        image={project.data.image}
+        company={project.data.company}
+        slug={project.slug}
+        coverHeight="md:h-44"
+      />
+    )
+  })
+}

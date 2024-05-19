@@ -1,9 +1,16 @@
 ---
-const { name, description, url, image, company, coverHeight = "" } = Astro.props
+const {
+  name,
+  description,
+  slug,
+  image,
+  company,
+  coverHeight = "",
+} = Astro.props
 ---
 
 <a
-  href={url}
+  href={`project/${slug}`}
   class="relative flex flex-col items-stretch group h-100 rounded-2xl"
 >
   <div

@@ -1,6 +1,6 @@
 ---
 import PageHeading from "../../components/page-heading.astro"
-import PostsLoop from "../../components/posts-loop.astro"
+import ListPosts from "../../components/list-posts.astro"
 import Layout from "../../layouts/main.astro"
 ---
 
@@ -12,7 +12,7 @@ import Layout from "../../layouts/main.astro"
     />
 
     <div class="z-50 flex flex-col items-stretch w-full gap-5 my-8">
-      <PostsLoop count="10" />
+      <ListPosts count="10" />
     </div>
   </section>
 </Layout>
