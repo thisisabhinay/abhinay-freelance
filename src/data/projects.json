@@ -1,0 +1,37 @@
+[
+  {
+		"name": "Landing Page",
+    "company": "SA Telento",
+		"description": "Modern career coaching landing built with Astro.js.",
+		"image": "/assets/project/sa-talento/cover.avif",
+		"url": "/project/sa-talento"
+	},
+	{
+		"name": "Lead Connector Microfrontends",
+    "company": "HighLevel",
+		"description": "Scalable lead capture phone system using microfrontends.",
+		"image": "/assets/project/hl-microfrontend/cover.png",
+		"url": "/project/highlevel"
+	},
+	{
+		"name": "AI Copywriting Tool",
+    "company": "Attryb",
+		"description": "Automated copywriting with built-in AI & SEO.",
+		"image": "/assets/project/attryb-studio/cover.png",
+		"url": "/project/attryb-studio"
+	},
+  {
+		"name": "D3 Data Landing Page",
+    "company": "Attryb",
+		"description": "Interactive industry trends & statistics landing page (D3.js)",
+		"image": "/assets/project/attryb-d3/cover.png",
+		"url": "/project/attryb-d3"
+	},
+	{
+		"name": "No-Code CRM Platform",
+    "company": "Orgzit",
+		"description": "Build & share custom CRM workflows in the cloud.",
+		"image": "/assets/project/orgzit/cover.png",
+		"url": "/project/orgzit"
+	}
+]
