@@ -1,7 +1,7 @@
 [
 	{
 		"dates": "Dec 2022 · Present",
-		"role": "Sr. Software Development Engineer - III (Vue3, Nest.js)",
+		"role": "Sr. Software Development Engineer - SDE 3 (Vue3, Nest.js)",
 		"company": "HighLevel",
 		"description": {
       "challenge": "Legacy monolithic frontend architecture hindered system agility and responsiveness, requiring a transformation into agile micro-frontends to improve performance and efficiency.",
@@ -50,7 +50,7 @@
 		"description": {
       "challenge": "Web application needed new features and improved onboarding to enrich product functionality and reduce the learning curve for new users.",
       "action": "Built and maintained new frontend features; pioneered intuitive onboarding flow.",
-      "result": "Enriched product functionality; reduced learning curve for new users. Validated product-market fit for this bootstrapped company. High worth <strong>B2B clients increased from 0 to 10.</strong>"
+      "result": "Enriched product functionality; reduced learning curve for new users. Validated product-market fit for this bootstrapped company.<strong>High worth B2B clients increased from 0 to 10.</strong>"
     },
 		"logo": "/assets/company/orgzit.png"
 	}
