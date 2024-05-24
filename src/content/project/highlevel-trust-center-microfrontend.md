@@ -16,15 +16,15 @@ It provides a set of products designed to help businesses comply with United Sta
 
 And assists businesses in registering their brand and campaigns, enabling them to send SMS messages using 10-digit long code numbers (either local or national) to recipients with U.S. phone numbers.
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss1.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss1.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss2.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss2.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss3.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss3.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss4.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss4.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss5.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss5.png" alt="Screenshot" class="project-screenshot"></p>
 
 ---
 
@@ -34,7 +34,7 @@ Shaken/STIR is a framework in the United States that verifies caller ID informat
 
 In HighLevel, the system is designed to facilitate adherence to Shaken/STIR compliance requirements through a user-friendly experience, making it easier for businesses to ensure their outgoing calls are verified and trusted.
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss6.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss6.png" alt="Screenshot" class="project-screenshot"></p>
 
 ---
 
@@ -44,7 +44,7 @@ CNAM, which stands for Caller ID Name, is a technology that associates phone num
 
 In HighLevel, the system is designed to facilitate CNAM registration through a user-friendly experience, making it easier for businesses to ensure their caller ID information is accurately displayed when making outbound calls.
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss7.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss7.png" alt="Screenshot" class="project-screenshot"></p>
 
 ## A2P Messaging Registration
 
@@ -52,16 +52,16 @@ A2P Messaging, short for Application-to-Person Messaging, refers to automated me
 
 HighLevel facilitates the A2P registration process through a user-friendly experience, making it easier for businesses to comply with the requirements and maintain effective communication with their customers via automated messages.
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss8.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss8.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss9.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss9.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss10.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss10.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss11.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss11.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss12.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss12.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss13.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss13.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-trust-centre-mf/ss14.png)
+<p><img src="/assets/project/hl-trust-centre-mf/ss14.png" alt="Screenshot" class="project-screenshot"></p>

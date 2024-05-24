@@ -16,9 +16,7 @@ HighLevel's SMS Provider feature simplifies text message communication within th
 
 LC provides one-click setup, potential cost savings, and seamless integration with other HighLevel features. Although client can integrate external SMS providers, LC offers benefits such as easier setup and potentially lower costs compared to using third-party providers.
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss1.png)
-
----
+<p><img src="/assets/project/hl-advanced-settings-mf/ss1.png" alt="Screenshot" class="project-screenshot"></p>
 
 ## Voicemail and Missed Call Settings
 
@@ -26,11 +24,9 @@ Voicemail settings allow clients to upload custom voicemail greetings that play 
 
 Missed Call Text Back feature allows clients to preview or automatically send a customized text message to callers who were unable to reach them.
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss2.png)
+<p><img src="/assets/project/hl-advanced-settings-mf/ss2.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss3.png)
-
----
+<p><img src="/assets/project/hl-advanced-settings-mf/ss3.png" alt="Screenshot" class="project-screenshot"></p>
 
 ## SMS Compliance Settings
 
@@ -40,13 +36,11 @@ SMS opt-out settings is a compliance-related feature that requires every message
 
 SMS Sender Info is a compliance-related setting that requires each message to identify the sender. This identification can be the business name or another recognizable identifier associated with the sender.
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss4.png)
+<p><img src="/assets/project/hl-advanced-settings-mf/ss4.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss5.png)
+<p><img src="/assets/project/hl-advanced-settings-mf/ss5.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss6.png)
-
----
+<p><img src="/assets/project/hl-advanced-settings-mf/ss6.png" alt="Screenshot" class="project-screenshot"></p>
 
 ## Messaging Limit Settings
 
@@ -54,6 +48,6 @@ SMS Limit applies to two specific cases. Firstly, HighLevel imposes limitations 
 
 Secondly, HighLevel monitors opt-out rates for each sub-account. If the opt-out rate exceeds a certain threshold, typically around 2%, the sub-account may be temporarily locked, preventing it from sending SMS messages for a 24-hour period.
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss7.png)
+<p><img src="/assets/project/hl-advanced-settings-mf/ss7.png" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/hl-advanced-settings-mf/ss8.png)
+<p><img src="/assets/project/hl-advanced-settings-mf/ss8.png" alt="Screenshot" class="project-screenshot"></p>

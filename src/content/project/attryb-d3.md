@@ -14,13 +14,13 @@ tags: [webdev, thoughts, coding, essay]
 
 Developed a data-driven landing page for Attryb's marketing website to showcase the scale and complexity of SEO keyword data. The project aimed to provide users with an intuitive interface to search, explore, and analyze SEO-related data, focusing on visualizing keyword relationships and clusters.
 
-![Phone Integration](/assets/project/attryb-d3/ss8.avif)
+<p><img src="/assets/project/attryb-d3/ss8.avif" alt="Screenshot" class="project-screenshot"></p>
 
 ## Search Interface
 
 Implemented a user-friendly search interface allowing users to input keywords and access relevant SEO data. The example demonstrates the functionality using the keywords "artificial diamond choker set"
 
-![Phone Integration](/assets/project/attryb-d3/ss2.avif)
+<p><img src="/assets/project/attryb-d3/ss2.avif" alt="Screenshot" class="project-screenshot"></p>
 
 ## System Overview
 
@@ -28,7 +28,7 @@ Utilized a backend system using Node.js and PostgreSQL to handle data retrieval 
 
 Developed algorithm to translate the retrieved data into a tree structure compatible with D3.js for visualization purposes. The normalized data is also converted into arrays for rendering graphs.
 
-![Phone Integration](/assets/project/attryb-d3/ss11.png)
+<p><img src="/assets/project/attryb-d3/ss11.png" alt="Screenshot" class="project-screenshot"></p>
 
 ## D3 Tree Visualization
 
@@ -36,24 +36,24 @@ Developed algorithm to translate the retrieved data into a tree structure compat
 - <strong>Sub-Tree</strong>: Enabled users to click on a category node to render a sub-tree, displaying the cluster of associated keywords. This feature allows users to focus on specific keyword subsets.
 - <strong>Node Details</strong>: Provided a detailed view of individual nodes upon clicking, presenting relevant information and metrics associated with the selected keyword.
 
-![Phone Integration](/assets/project/attryb-d3/ss1.avif)
+<p><img src="/assets/project/attryb-d3/ss1.avif" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/attryb-d3/ss6.avif)
+<p><img src="/assets/project/attryb-d3/ss6.avif" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/attryb-d3/ss7.avif)
+<p><img src="/assets/project/attryb-d3/ss7.avif" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/attryb-d3/ss9.avif)
+<p><img src="/assets/project/attryb-d3/ss9.avif" alt="Screenshot" class="project-screenshot"></p>
 
 ## D3 Scatter Plot Graphs
 
 - <strong>Keyword Clustering</strong>: Grouped keywords based on clusters defined by attributes beyond their associated categories. Utilized scatter plot graphs to visualize these keyword clusters effectively.
 - <strong>Interactive Exploration</strong>: Implemented interactive scatter plot graphs, enabling users to explore keyword relationships, identify patterns, and gain insights into SEO data.
 
-![Phone Integration](/assets/project/attryb-d3/ss3.avif)
+<p><img src="/assets/project/attryb-d3/ss3.avif" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/attryb-d3/ss5.avif)
+<p><img src="/assets/project/attryb-d3/ss5.avif" alt="Screenshot" class="project-screenshot"></p>
 
-![Phone Integration](/assets/project/attryb-d3/ss4.avif)
+<p><img src="/assets/project/attryb-d3/ss4.avif" alt="Screenshot" class="project-screenshot"></p>
 
 ## Impact
 

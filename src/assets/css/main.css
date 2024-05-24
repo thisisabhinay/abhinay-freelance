@@ -81,4 +81,8 @@ html.dark #darkToggle:hover .horizon {
   .btn-rounded {
     @apply btn !rounded-full;
   }
+
+  .project-screenshot {
+    @apply ring-2 ring-slate-100 p-3 dark:ring-slate-700;
+  }
 }
