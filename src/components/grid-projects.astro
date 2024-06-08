@@ -1,28 +1,31 @@
 ---
-import { latestPortfolio } from "../utils/projects"
+import { pinnedPortfolio } from "../utils/projects"
 import Project from "../components/project.astro"
 
 const { count, className = "" } = Astro.props
 
-const portfolio = count ? latestPortfolio.slice(0, count) : latestPortfolio
+const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
 ---
 
 <div
-  class="grid items-stretch w-full grid-cols-1 sm:grid-cols-2 gap-7 md:grid-cols-3"
+  class="grid w-full grid-rows-1 grid-cols-1 sm:grid-cols-2 gap-7 md:grid-cols-[1fr_1px_1fr_1px_1fr]"
   class:list={[className]}
 >
   {
     portfolio.map((portfolioItem) => {
       console.log(portfolioItem)
       return (
-        <Project
-          name={portfolioItem.data.title}
-          description={portfolioItem.data.description}
-          image={portfolioItem.data.image}
-          company={portfolioItem.data.company}
-          slug={portfolioItem.slug}
-          layout="card"
-        />
+        <>
+          <Project
+            name={portfolioItem.data.title}
+            description={portfolioItem.data.description}
+            image={portfolioItem.data.image}
+            company={portfolioItem.data.company}
+            slug={portfolioItem.slug}
+            layout="card"
+          />
+          <div class="h-px w-full sm:hidden md:block md:h-full md:w-px dividerline-bg last:hidden" />
+        </>
       )
     })
   }
