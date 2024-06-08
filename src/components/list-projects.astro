@@ -14,21 +14,20 @@ projectsList = count ? projectsList.slice(0, count) : projectsList
 ---
 
 {company ? <BrandSeparator text={company} brandLogo={brandLogo} /> : null}
-<div
-  class="grid items-stretch w-full grid-cols-1 gap-7"
-  class:list={[className]}
->
+<div class="divide-y dividerline" class:list={[className]}>
   {
     projectsList.map((project) => {
       return (
-        <Project
-          name={project.data.title}
-          description={project.data.description}
-          image={project.data.image}
-          company={project.data.company}
-          slug={project.slug}
-          layout="list"
-        />
+        <div class="py-4 first:pt-0">
+          <Project
+            name={project.data.title}
+            description={project.data.description}
+            image={project.data.image}
+            company={project.data.company}
+            slug={project.slug}
+            layout="list"
+          />
+        </div>
       )
     })
   }

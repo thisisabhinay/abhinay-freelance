@@ -11,14 +11,6 @@ export const latestPortfolio = (
     new Date(a.data.publishDate).valueOf()
 );
 
-export const pinnedPortfolio = (
-  await getCollection("portfolio", ({ data }) => {
-    return data.draft !== true;
-  })
-)
-  .sort(
-    (a, b) =>
-      new Date(b.data.publishDate).valueOf() -
-      new Date(a.data.publishDate).valueOf()
-  )
-  .filter((portfolioItem) => portfolioItem.data.pinned);
+export const pinnedPortfolio = latestPortfolio?.filter(
+  (portfolioItem) => portfolioItem.data.pinned
+);
