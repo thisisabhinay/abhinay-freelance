@@ -6,6 +6,7 @@ image: "/assets/project/attryb-studio/cover.avif"
 company: "Attryb"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
+pinned: false
 ---
 
 ![Cover Image](/assets/project/attryb-studio/cover.avif)

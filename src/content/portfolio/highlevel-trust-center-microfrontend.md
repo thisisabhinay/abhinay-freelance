@@ -6,6 +6,7 @@ image: "/assets/project/hl-trust-centre-mf/cover.jpeg"
 company: "HighLevel"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
+pinned: true
 ---
 
 ![Cover Image](/assets/project/hl-trust-centre-mf/cover.jpeg)

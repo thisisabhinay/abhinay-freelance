@@ -6,6 +6,7 @@ image: "/assets/project/hl-advanced-settings-mf/cover.jpeg"
 company: "HighLevel"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
+pinned: false
 ---
 
 ![Cover Image](/assets/project/hl-advanced-settings-mf/cover.jpeg)

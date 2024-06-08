@@ -6,6 +6,7 @@ image: "/assets/project/orgzit/cover.png"
 company: "Orgzit"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
+pinned: false
 ---
 
 ![Writing Less, Achieve More](/assets/project/orgzit/cover.png)
