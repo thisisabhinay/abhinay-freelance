@@ -90,3 +90,12 @@ html.dark #darkToggle:hover .horizon {
     @apply ring-2 ring-slate-100 p-3 dark:ring-slate-700;
   }
 }
+
+
+#landing-page #widget-music-player{
+  @apply relative z-20 top-5 -right-20
+}
+
+#landing-page #widget-projects{
+  @apply relative z-10 top-20
+}
