@@ -1,41 +1,12 @@
 import { z, defineCollection } from "astro:content";
+import { blogSchema, portfolioSchema } from "../schema";
 
 const BlogPosts = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    excerpt: z.string(),
-    category: z.string().trim(),
-    author: z.string().trim(),
-    draft: z.boolean().optional(),
-    tags: z.array(z.string()),
-    image: z.string().optional(),
-    publishDate: z.string().transform((str) =>
-      new Date(str).toLocaleDateString("en-GB", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      })
-    ),
-  }),
+  schema: blogSchema,
 });
 
 const Portfolio = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    author: z.string().trim(),
-    company: z.string().trim(),
-    draft: z.boolean().optional(),
-    tags: z.array(z.string()),
-    image: z.string().optional(),
-    publishDate: z.string().transform((str) =>
-      new Date(str).toLocaleDateString("en-GB", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      })
-    ),
-  }),
+  schema: portfolioSchema,
 });
 
 export const collections = {
