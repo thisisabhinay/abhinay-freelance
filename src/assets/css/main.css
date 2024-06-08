@@ -82,6 +82,10 @@ html.dark #darkToggle:hover .horizon {
     @apply btn !rounded-full;
   }
 
+  .btn-secondary {
+    @apply !bg-transparent hover:!bg-transparent dark:!bg-transparent dark:hover:!bg-transparent !border-neutral-900 hover:!border-neutral-600 dark:!border-neutral-100 dark:hover:!border-neutral-300  !text-neutral-900 hover:!text-neutral-600 dark:!text-neutral-100 dark:hover:!text-neutral-300  ;
+  }
+
   .project-screenshot {
     @apply ring-2 ring-slate-100 p-3 dark:ring-slate-700;
   }
