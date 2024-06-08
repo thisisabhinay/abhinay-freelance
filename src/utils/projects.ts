@@ -1,8 +1,8 @@
 import { getCollection } from "astro:content";
 
 // Only return posts without `draft: true` in the frontmatter
-export const latestProjects = (
-  await getCollection("project", ({ data }) => {
+export const latestPortfolio = (
+  await getCollection("portfolio", ({ data }) => {
     return data.draft !== true;
   })
 ).sort(

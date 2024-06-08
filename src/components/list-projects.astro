@@ -1,5 +1,5 @@
 ---
-import { latestProjects } from "../utils/projects"
+import { latestPortfolio } from "../utils/projects"
 import Project from "../components/project.astro"
 import BrandSeparator from "../components/brand-separator.astro"
 
@@ -7,8 +7,8 @@ const { count, company, brandLogo, className = "" } = Astro.props
 
 let projectsList
 projectsList = company
-  ? latestProjects.filter((project) => project.data.company === company)
-  : latestProjects
+  ? latestPortfolio.filter((project) => project.data.company === company)
+  : latestPortfolio
 
 projectsList = count ? projectsList.slice(0, count) : projectsList
 ---

@@ -4,25 +4,27 @@ import type { CollectionEntry } from "astro:content"
 import { getCollection } from "astro:content"
 
 interface Props {
-  project: CollectionEntry<"project">
+  portfolio: CollectionEntry<"portfolio">
 }
 
 export async function getStaticPaths() {
-  const project = await getCollection("project")
+  const list = await getCollection("portfolio")
 
-  return project.map((project) => ({
-    params: { slug: project.slug },
-    props: { project },
+  return list.map((portfolio) => ({
+    params: { slug: portfolio.slug },
+    props: { portfolio },
   }))
 }
 
-const { project } = Astro.props
-const { Content } = await project.render()
+const { portfolio } = Astro.props
+
+console.log(Astro.props, portfolio)
+const { Content } = await portfolio.render()
 ---
 
-<MainLayout title={project.data.title}>
+<MainLayout title={portfolio.data.title}>
   <main
-    id="page-project"
+    id="page-portfolio"
     class="relative z-30 max-w-4xl pb-1 mx-auto mt-10 bg-white dark:bg-neutral-950 md:rounded-t-md text-neutral-900"
   >
     <div
@@ -42,12 +44,12 @@ const { Content } = await project.render()
         <h1
           class="text-3xl font-bold leading-tight tracking-tighter text-left md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none"
         >
-          {project.data.title}
+          {portfolio.data.title}
         </h1>
         <p
           class="text-sm leading-6 text-neutral-500 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
         >
-          {project.data.description}
+          {portfolio.data.description}
         </p>
       </div>
     </div>
@@ -62,12 +64,12 @@ const { Content } = await project.render()
 
 <style is:global>
   @media (min-width: 1024px) {
-    #page-project article p:has(img) {
+    #page-portfolio article p:has(img) {
       margin-left: -8rem;
       margin-right: -8rem;
     }
 
-    #page-project article p:has(img):first-child {
+    #page-portfolio article p:has(img):first-child {
       margin-bottom: 3rem;
     }
   }

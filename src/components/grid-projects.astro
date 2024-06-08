@@ -1,10 +1,10 @@
 ---
-import { latestProjects } from "../utils/projects"
+import { latestPortfolio } from "../utils/projects"
 import Project from "../components/project.astro"
 
 const { count, className = "" } = Astro.props
 
-const projectsList = count ? latestProjects.slice(0, count) : latestProjects
+const portfolio = count ? latestPortfolio.slice(0, count) : latestPortfolio
 ---
 
 <div
@@ -12,14 +12,15 @@ const projectsList = count ? latestProjects.slice(0, count) : latestProjects
   class:list={[className]}
 >
   {
-    projectsList.map((project) => {
+    portfolio.map((portfolioItem) => {
+      console.log(portfolioItem)
       return (
         <Project
-          name={project.data.title}
-          description={project.data.description}
-          image={project.data.image}
-          company={project.data.company}
-          slug={project.slug}
+          name={portfolioItem.data.title}
+          description={portfolioItem.data.description}
+          image={portfolioItem.data.image}
+          company={portfolioItem.data.company}
+          slug={portfolioItem.slug}
           layout="card"
         />
       )
