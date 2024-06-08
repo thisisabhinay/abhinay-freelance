@@ -10,7 +10,9 @@ tags: [webdev, thoughts, coding, essay]
 
 ![Writing Less, Achieve More](/assets/images/posts/workspace.jpg)
 
-<span class="text-3xl font-bold">A</span>s a senior software engineer focused on web development and front-end design, I often find myself immersed in a world that goes beyond mere lines of code. It's a realm where creativity and logic intertwine, where the boundaries between art and science blur. When I sit down to write code for web applications, I'm not just solving problems; I'm creating something that has the potential to touch lives and shape online experiences.
+<p class="first-letter:text-5xl first-letter:font-medium">
+As a senior software engineer focused on web development and front-end design, I often find myself immersed in a world that goes beyond mere lines of code. It's a realm where creativity and logic intertwine, where the boundaries between art and science blur. When I sit down to write code for web applications, I'm not just solving problems; I'm creating something that has the potential to touch lives and shape online experiences.
+</p>
 
 Web development is a form of expression, a way to pour our thoughts and ideas into a digital canvas. It's a medium that allows us to build entire online worlds, to craft web interactions and user interfaces that can evoke emotions and inspire action. Every line of HTML, CSS, and JavaScript is a brushstroke, every function a color, and together they form a masterpiece of web functionality and design.
 

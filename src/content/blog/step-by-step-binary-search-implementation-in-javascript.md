@@ -10,7 +10,9 @@ tags: [webdev, thoughts, coding, essay]
 
 ![Writing Less, Achieve More](/assets/images/posts/workspace.jpg)
 
-<span class="text-3xl font-bold">B</span>inary search is a powerful algorithm used to efficiently search for a target element in a sorted array. In this blog post, we will explore Binary Search Implementation, where we will dive into the problem description, discuss the solution approach, provide code examples, and explain the implementation details.
+<p class="first-letter:text-5xl first-letter:font-medium">
+Binary search is a powerful algorithm used to efficiently search for a target element in a sorted array. In this blog post, we will explore Binary Search Implementation, where we will dive into the problem description, discuss the solution approach, provide code examples, and explain the implementation details.
+</p>
 
 ## Problem Description
 The requirement is to implement the binary search algorithm iteratively. Given a sorted array and a target element, our goal is to determine whether the target is present in the array and return its index if found.
