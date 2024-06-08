@@ -2,7 +2,7 @@
 title: "The Tao of Web Development - Reflections of a Senior Frontend Engineer"
 excerpt: "In this blog post, I explore the creative and philosophical aspects of coding in web development, comparing it to artistic expression and considering its impact on the digital landscape and human experience."
 publishDate: "2023-07-09T16:39:36.050Z"
-image: "/assets/images/posts/code-canvas.jpg"
+image: "/assets/images/posts/workspace.jpg"
 category: "thoughts"
 author: "abhinay thakur"
 tags: [webdev, thoughts, coding, essay]
