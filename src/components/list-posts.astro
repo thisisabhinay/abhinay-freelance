@@ -1,7 +1,7 @@
 ---
 import { latestPosts } from "../utils/posts"
 const { count } = Astro.props
-const postsLoop = latestPosts.slice(0, count)
+const listPosts = latestPosts.slice(0, count)
 
 const hoverStyle =
   "group-hover:shadow-neutral-100 dark:group-hover:shadow-black group-hover:border-white dark:group-hover:border-neutral-800 group-hover:shadow-lg group-hover:translate-x-1"
@@ -9,7 +9,7 @@ const hoverStyle =
 
 <div class="divide-y dividerline">
   {
-    postsLoop.map(({ slug, data }) => {
+    listPosts.map(({ slug, data }) => {
       return (
         <div
           class="relative cursor-pointer group py-4 first:pt-0 last:pb-0 grid grid-rows-1 grid-cols-12 gap-4 justify-items-end"

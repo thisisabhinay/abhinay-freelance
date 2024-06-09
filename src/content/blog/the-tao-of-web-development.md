@@ -1,14 +1,19 @@
 ---
 title: "The Tao of Web Development - Reflections of a Senior Frontend Engineer"
 excerpt: "In this blog post, I explore the creative and philosophical aspects of coding in web development, comparing it to artistic expression and considering its impact on the digital landscape and human experience."
-publishDate: "2023-07-09T16:39:36.050Z"
-image: "/assets/images/posts/workspace.jpg"
+publishDate: "2023-05-22"
+image: "/assets/images/posts/workspace-mini.jpg"
 category: "thoughts"
 author: "abhinay thakur"
 tags: [webdev, thoughts, coding, essay]
 ---
 
-![Writing Less, Achieve More](/assets/images/posts/workspace.jpg)
+<figure class="text-center text-xs -mx-32">
+  <img src="/assets/images/posts/workspace.jpg" alt="Workspace desk" />
+  <figcaption>
+    Photo by <a target="_blank" href="https://unsplash.com/@michsole?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Michael Soledad</a> on <a target="_blank" href="https://unsplash.com/photos/black-sony-headphones-beside-imac-on-top-of-table-FJh36ln5pXc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  </figcaption>
+</figure>
 
 <p class="first-letter:text-5xl first-letter:font-medium">
 As a senior software engineer focused on web development and front-end design, I often find myself immersed in a world that goes beyond mere lines of code. It's a realm where creativity and logic intertwine, where the boundaries between art and science blur. When I sit down to write code for web applications, I'm not just solving problems; I'm creating something that has the potential to touch lives and shape online experiences.

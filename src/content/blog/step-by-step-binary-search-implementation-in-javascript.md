@@ -1,14 +1,20 @@
 ---
 title: "Step-by-Step Guide to Implementing Binary Search in JavaScript"
-excerpt: "In this blog post, I explore the creative and philosophical aspects of coding in web development, comparing it to artistic expression and considering its impact on the digital landscape and human experience."
-publishDate: "2023-07-09T16:39:36.050Z"
-image: "/assets/images/posts/code-canvas.jpg"
+excerpt: "Binary search is an efficient algorithm for finding a target element in a sorted array. Let’s explore its implementation in JavaScript."
+publishDate: "2023-05-26"
+image: "/assets/images/posts/binary-search-mini.jpg"
 category: "thoughts"
 author: "abhinay thakur"
 tags: [webdev, thoughts, coding, essay]
 ---
 
-![Writing Less, Achieve More](/assets/images/posts/code-canvas.jpg)
+<figure class="text-center text-xs -mx-32">
+  <img src="/assets/images/posts/binary-search.jpg" alt="PS4 laying on a table" />
+  <figcaption>
+    Photo by <a target="_blank" href="https://unsplash.com/@pankajpatel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pankaj Patel</a> on <a target="_blank" href="https://unsplash.com/photos/monitor-displaying-indexhtml-codes-_SgRNwAVNKw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+  </figcaption>
+</figure>
 
 <p class="first-letter:text-5xl first-letter:font-medium">
 Binary search is a powerful algorithm used to efficiently search for a target element in a sorted array. In this blog post, we will explore Binary Search Implementation, where we will dive into the problem description, discuss the solution approach, provide code examples, and explain the implementation details.
