@@ -1,22 +1,57 @@
 ---
-import { latestPortfolio } from "../utils/projects"
+import { latestPortfolio } from "../utils/portfolio"
+import { latestSideProjects } from "../utils/side-projects"
 import Project from "../components/project.astro"
 import BrandSeparator from "../components/brand-separator.astro"
 
-const { count, company, brandLogo, className = "" } = Astro.props
+type context = "PORTFOLIO" | "SIDE_PROJECTS"
 
-let projectsList
-projectsList = company
+interface Props {
+  context: context
+  count?: number
+  className?: string
+  company?: string
+  brandLogo?: string
+}
+
+type collection = {
+  [name in context]: any
+}
+
+const {
+  count,
+  company,
+  brandLogo,
+  className = "",
+  context = "PORTFOLIO",
+} = Astro.props
+
+let portfolio
+portfolio = company
   ? latestPortfolio.filter((project) => project.data.company === company)
   : latestPortfolio
 
-projectsList = count ? projectsList.slice(0, count) : projectsList
+portfolio = count ? portfolio.slice(0, count) : portfolio
+
+const sideProjects = count
+  ? latestSideProjects.slice(0, count)
+  : latestSideProjects
+
+const collection: collection = {
+  PORTFOLIO: portfolio,
+  SIDE_PROJECTS: sideProjects,
+}
+
+const hrefBase: collection = {
+  PORTFOLIO: "portfolio",
+  SIDE_PROJECTS: "side-projects",
+}
 ---
 
 {company ? <BrandSeparator text={company} brandLogo={brandLogo} /> : null}
-<div class="divide-y dividerline" class:list={[className]}>
+<div class="divide-y dividerline" class:list={[className, !company ? "mt-20" : ""]}>
   {
-    projectsList.map((project) => {
+    collection[context].map((project: any) => {
       return (
         <div class="py-4 first:pt-0">
           <Project
@@ -25,6 +60,7 @@ projectsList = count ? projectsList.slice(0, count) : projectsList
             image={project.data.image}
             company={project.data.company}
             slug={project.slug}
+            hrefBase={hrefBase[context]}
             layout="list"
           />
         </div>

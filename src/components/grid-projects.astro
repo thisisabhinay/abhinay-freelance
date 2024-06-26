@@ -1,10 +1,36 @@
 ---
-import { pinnedPortfolio } from "../utils/projects"
+import { pinnedPortfolio } from "../utils/portfolio"
+import { pinnedSideProjects } from "../utils/side-projects"
 import Project from "../components/project.astro"
 
-const { count, className = "" } = Astro.props
+type context = "PORTFOLIO" | "SIDE_PROJECTS"
+
+interface Props {
+  count: number
+  context: context
+  className?: string
+}
+
+type collection = {
+  [name in context]: any
+}
+
+const { count, className = "", context = "PORTFOLIO" } = Astro.props
 
 const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
+const sideProjects = count
+  ? pinnedSideProjects.slice(0, count)
+  : pinnedSideProjects
+
+const collection: collection = {
+  PORTFOLIO: portfolio,
+  SIDE_PROJECTS: sideProjects,
+}
+
+const hrefBase: collection = {
+  PORTFOLIO: "portfolio",
+  SIDE_PROJECTS: "side-projects",
+}
 ---
 
 <div
@@ -12,17 +38,17 @@ const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
   class:list={[className]}
 >
   {
-    portfolio.map((portfolioItem) => {
-      console.log(portfolioItem)
+    collection[context].map((project: any) => {
       return (
         <>
           <Project
-            name={portfolioItem.data.title}
-            description={portfolioItem.data.description}
-            image={portfolioItem.data.image}
-            company={portfolioItem.data.company}
-            slug={portfolioItem.slug}
+            name={project.data.title}
+            description={project.data.description}
+            image={project.data.image}
+            company={project.data.company}
+            slug={project.slug}
             layout="card"
+            hrefBase={hrefBase[context]}
           />
           <div class="h-px w-full sm:hidden md:block md:h-full md:w-px dividerline-bg last:hidden" />
         </>

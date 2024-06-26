@@ -1,7 +1,15 @@
 ---
 import { Picture } from "astro:assets"
 
-const { name, description, slug, image, company, layout = "card" } = Astro.props
+const {
+  name,
+  description,
+  slug,
+  image,
+  company,
+  layout = "card",
+  hrefBase,
+} = Astro.props
 
 const baseStyle = "w-full h-full rounded-2xl"
 
@@ -30,15 +38,11 @@ const clampStyle: any = {
   list: "line-clamp-4 md:line-clamp-5 lg:line-clamp-6",
 }
 
-const svgArrowStyle: any = {
-  card: "translate-y-2",
-  list: "translate-y-2.5",
-}
 ---
 
 <a
   data-layout={layout}
-  href={`portfolio/${slug}`}
+  href={`${hrefBase}/${slug}`}
   class="relative flex flex-col w-full items-stretch group h-100 rounded-2xl"
 >
   <div class:list={[baseStyle, layoutStyle[layout]]}>
