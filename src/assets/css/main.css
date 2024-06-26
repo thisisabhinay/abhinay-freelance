@@ -75,7 +75,7 @@ html.dark #darkToggle:hover .horizon {
 
 @layer utilities {
   .hover-fx {
-    @apply duration-300 ease-out border border-solid border-neutral-300 dark:border-neutral-600 group-hover:ring-4 group-hover:ring-neutral-50 dark:group-hover:ring-neutral-800;
+    @apply duration-300 ease-out border border-solid border-neutral-100 dark:border-neutral-800 group-hover:ring-4 group-hover:ring-neutral-50 dark:group-hover:ring-neutral-800;
   }
 
   .hover-fx--no-ring {
@@ -96,6 +96,14 @@ html.dark #darkToggle:hover .horizon {
 
   .project-screenshot {
     @apply ring-2 ring-slate-100 p-3 dark:ring-slate-700;
+  }
+
+  .dividerline {
+    @apply divide-neutral-200/50 dark:divide-neutral-700/50 
+  }
+
+  .dividerline-bg {
+    @apply bg-neutral-200/50 dark:bg-neutral-700/50 
   }
 }
 
