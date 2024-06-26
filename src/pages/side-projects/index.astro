@@ -2,20 +2,15 @@
 import PageHeading from "../../components/page-heading.astro"
 import ListProjects from "../../components/list-projects.astro"
 import Layout from "../../layouts/main.astro"
-import companies from "../../data/clients.json"
 ---
 
-<Layout title="Portfolio">
+<Layout title="Side Projects">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
-      title="Portfolio"
+      title="Side Projects"
       description="I'm passionate about bringing new ideas to life through innovative projects. This portfolio page showcases some of my most recent works, highlighting my creativity and technical skills."
     />
 
-    {
-      companies?.map(({ name, logo }) => (
-        <ListProjects company={name} brandLogo={logo} context="PORTFOLIO" />
-      ))
-    }
+    {(<ListProjects context="SIDE_PROJECTS" />)}
   </section>
 </Layout>
