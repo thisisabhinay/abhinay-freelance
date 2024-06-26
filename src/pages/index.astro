@@ -1,11 +1,9 @@
 ---
-import Button from "../components/button.astro"
-import Projects from "../components/projects.astro"
+import PortfolioGrid from "../components/portfolio-grid.astro"
+import SideProjectsGrid from "../components/side-projects-grid.astro"
 import Separator from "../components/separator.astro"
 import Writings from "../components/writings.astro"
 import Layout from "../layouts/main.astro"
-import WidgetMusicPlayer from "../components/widgets/music-player.astro"
-import WidgetProjects from "../components/widgets/projects.astro"
 import HeroSection from "../components/hero-section.astro"
 
 const projects = [
@@ -27,11 +25,14 @@ const projects = [
     id="landing-page"
     class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
   >
-  <HeroSection/>
+    <HeroSection />
   </div>
 
-  <Separator text="Check out my projects" />
-  <Projects count="3" />
+  <Separator text="Check out my portfolio" />
+  <PortfolioGrid count={3} context="PORTFOLIO" />
+
+  <Separator text="Check out my side projects" />
+  <SideProjectsGrid count={3} context="SIDE_PROJECTS" />
   <Separator text="Some of my writing" />
   <Writings />
 </Layout>
