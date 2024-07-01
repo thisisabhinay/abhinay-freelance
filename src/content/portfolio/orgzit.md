@@ -12,10 +12,10 @@ pinned: false
 ![Writing Less, Achieve More](/assets/project/orgzit/cover.avif)
 
 ## Overview
-This project aimed to develop a cloud-based application that empowers users to build and share custom workflows. The application combines the familiarity of spreadsheets with the power of databases, offering users a versatile tool for managing their data and processes. With features like different data views, custom workflows, and analytics, the application caters to a wide range of use cases and user needs.
+This project aimed to develop a cloud-based application that empowers small and medium enterprises (SMEs) to build and share custom workflows. The application combines the familiarity of spreadsheets with the power of databases, offering SMEs a versatile tool for managing their data and processes. With features like different data views, custom workflows, and analytics, the application caters to the unique needs and challenges faced by SMEs in various industries.
 
 ### Problem Statement
-Many businesses and individuals rely on spreadsheets to manage their data and workflows. However, traditional spreadsheets often lack the flexibility and scalability required to handle complex processes and large datasets. This project sought to address this problem by creating a cloud-based solution that combines the ease of use of spreadsheets with the robustness and functionality of databases.
+Many SMEs rely on spreadsheets to manage their data and workflows due to their accessibility and low cost. However, traditional spreadsheets often lack the flexibility and scalability required to handle the complex processes and growing datasets that SMEs encounter as they expand. This project sought to address this problem by creating a cloud-based solution specifically tailored to SMEs, combining the ease of use of spreadsheets with the robustness and functionality of databases. By providing an affordable and user-friendly tool, the application aims to help SMEs streamline their operations, improve efficiency, and make data-driven decisions to support their growth and success in the market.
 
 ### Use Cases
 The application serves a variety of use cases, including:
