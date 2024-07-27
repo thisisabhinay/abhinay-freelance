@@ -29,15 +29,14 @@ const coverSize: any = {
 }
 
 const headingStyle: any = {
-  card: "text-base",
+  card: "text-base line-clamp-2",
   list: "text-lg",
 }
 
 const clampStyle: any = {
   card: "line-clamp-5 md:line-clamp-3",
-  list: "line-clamp-4 md:line-clamp-5 lg:line-clamp-6",
+  list: "line-clamp-4 md:line-clamp-3",
 }
-
 ---
 
 <a
@@ -58,7 +57,7 @@ const clampStyle: any = {
         class="flex relative gap-2 items-start justify-start mb-0 font-semibold tracking-tight text-neutral-900 dark:text-neutral-100"
         class:list={[headingStyle[layout]]}
       >
-        <div>{name}</div>
+        <div class="line-clamp-2">{name}</div>
       </div>
       <div class="text-sm text-neutral-900 font-medium dark:text-neutral-400">
         {company}
