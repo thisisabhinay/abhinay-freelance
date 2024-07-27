@@ -6,7 +6,7 @@
 		"description": {
       "challenge": "Legacy monolithic frontend architecture hindered system agility and responsiveness, requiring a transformation into agile micro-frontends to improve performance and efficiency.",
       "action": "Implemented micro-frontend architecture, increasing system agility and responsiveness.",
-      "result": "Contributed to the product's scalability by ensuring the frontend could <strong>handle the increase from 15k to 75k sub-accounts</strong> within a year."
+      "result": "Contributed to the product's scalability by ensuring the frontend could handle the increase from 15k to 75k sub-accounts within a year."
     },
 		"logo": "/assets/company/highlevel.png"
 	},
@@ -17,7 +17,7 @@
 		"description": {
       "challenge": "Company needed to expand offerings, accelerate time-to-market, and foster growth in a team of junior.",
       "action": "Led product development, launched new products, and mentored junior developers.",
-      "result": "Helped <strong>increase company valuation by 10x</strong> and cultivated an efficient work environment."
+      "result": "Helped increase company valuation by 10x and cultivated an efficient work environment."
     },
 		"logo": "/assets/company/attryb.png"
 	},
@@ -50,7 +50,7 @@
 		"description": {
       "challenge": "Web application needed new features and improved onboarding to enrich product functionality and reduce the learning curve for new users.",
       "action": "Built and maintained new frontend features; pioneered intuitive onboarding flow.",
-      "result": "Enriched product functionality; reduced learning curve for new users. Validated product-market fit for this bootstrapped company. <strong>Enterprise Clients increased from 1 to 10.</strong>"
+      "result": "Enriched product functionality; reduced learning curve for new users. Validated product-market fit for this bootstrapped company. Enterprise clients increased from 1 to 10."
     },
 		"logo": "/assets/company/orgzit.png"
 	}
