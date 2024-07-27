@@ -6,21 +6,25 @@ export type Skill = {
 
 interface Props {
   list: Skill[]
+  heading?: string
 }
 
-const { list } = Astro.props
+const { list, heading } = Astro.props
 ---
 
-<div id="tech-stack" class="flex items-center justify-center gap-10">
+<h2 id="heading-tech-stack" class="">{heading}</h2>
+<div id="tech-stack" class="flex items-start justify-start gap-8">
   {
     list?.map((skill) => (
       <div class="flex flex-col items-center gap-1">
         <img
-          class="!m-0 rounded-full size-16 object-cover"
-          src={`https://skillicons.dev/icons?i=${skill.name}`}
+          class="!m-0 !rounded-sm size-16 object-cover"
+          src={`/assets/images/stack/${skill.name}.svg`}
           alt={skill.title}
         />
-        <div class="text-xs capitalize text-slate-600">{skill.title}</div>
+        <div class="w-min text-center text-xs capitalize text-slate-600">
+          {skill.title}
+        </div>
       </div>
     ))
   }
