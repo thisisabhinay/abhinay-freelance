@@ -11,7 +11,7 @@ pinned: false
 
 ![Writing Less, Achieve More](/assets/project/orgzit/cover.avif)
 
-## Overview
+## Project Overview
 This project aimed to develop a cloud-based application that empowers small and medium enterprises (SMEs) to build and share custom workflows. The application combines the familiarity of spreadsheets with the power of databases, offering SMEs a versatile tool for managing their data and processes. With features like different data views, custom workflows, and analytics, the application caters to the unique needs and challenges faced by SMEs in various industries.
 
 ### Problem Statement
