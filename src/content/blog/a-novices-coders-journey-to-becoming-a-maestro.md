@@ -1,7 +1,7 @@
 ---
 title: "A Novice’s Coder's Journey to Becoming a Maestro"
 excerpt: "In the vast symphony of abstract creation, each line of code is a note, contributing to the grand opus of problem-solving and innovation."
-publishDate: "2023-05-19"
+publishDate: "2023-06-28"
 image: "/assets/images/posts/piano-mini.jpg"
 category: "thoughts"
 author: "abhinay thakur"

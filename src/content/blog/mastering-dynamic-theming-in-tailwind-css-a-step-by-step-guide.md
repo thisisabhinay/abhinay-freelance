@@ -1,7 +1,7 @@
 ---
 title: "Mastering Dynamic Theming in Tailwind CSS: A Step-by-Step Guide"
 excerpt: "Master the art of dynamic theming in Tailwind CSS and create adaptable, user-centric interfaces in your React application. This final part of our series culminates your journey from basic setup to advanced styling, empowering you to build flexible, professional-grade web applications that respond to user preferences in real-time."
-publishDate: "2024-07-19"
+publishDate: "2024-05-01"
 image: "/assets/images/posts/ts-setup-mini.jpg"
 category: "tutorial"
 author: "abhinay thakur"

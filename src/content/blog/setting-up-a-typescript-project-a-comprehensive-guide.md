@@ -1,7 +1,7 @@
 ---
 title: "Setting Up a TypeScript Project: A Comprehensive Guide"
 excerpt: "Learn how to set up a TypeScript project from scratch using npm and tsc-watch. This tutorial provides step-by-step instructions to help you get started with TypeScript development."
-publishDate: "2024-07-19"
+publishDate: "2023-05-15"
 image: "/assets/images/posts/ts-setup-mini.jpg"
 category: "tutorial"
 author: "abhinay thakur"

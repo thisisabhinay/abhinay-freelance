@@ -1,7 +1,7 @@
 ---
 title: "How to Set Up Tailwind CSS with Webpack: A Step-by-Step Guide"
 excerpt: "Transform your React project's styling workflow with this step-by-step guide to integrating Tailwind CSS with Webpack. In this third installment of our series, you'll learn how to harness the power of utility-first CSS, preparing you for our final chapter on implementing dynamic theming."
-publishDate: "2024-07-20"
+publishDate: "2024-02-01"
 image: "/assets/images/posts/ts-setup-mini.jpg"
 category: "tutorial"
 author: "abhinay thakur"

@@ -1,7 +1,7 @@
 ---
 title: "Embracing my true creative self beyond the confines of a career-defined identity"
 excerpt: "Breaking free from the confines of career-centric identity, we can redefine the essence of our existence by embracing our authentic selves and pursuing our passions."
-publishDate: "2023-06-07"
+publishDate: "2024-06-14"
 image: "/assets/images/posts/embrace-mini.jpg"
 category: "thoughts"
 author: "abhinay thakur"

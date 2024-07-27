@@ -1,7 +1,7 @@
 ---
 title: "Setting Up a React Project with TypeScript and Webpack: A Step-by-Step Guide"
 excerpt: "Kickstart your modern web development journey with this guide to setting up a React project using TypeScript and Webpack. This first installment in our four-part series lays the foundation for a scalable, type-safe application, setting the stage for our upcoming exploration of test-driven development."
-publishDate: "2024-07-17"
+publishDate: "2023-09-23"
 image: "/assets/images/posts/ts-setup-mini.jpg"
 category: "tutorial"
 author: "abhinay thakur"

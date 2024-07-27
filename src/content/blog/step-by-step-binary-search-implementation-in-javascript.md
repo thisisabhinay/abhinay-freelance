@@ -1,7 +1,7 @@
 ---
 title: "Step-by-Step Guide to Implementing Binary Search in JavaScript"
 excerpt: "Binary search is an efficient algorithm for finding a target element in a sorted array. Let’s explore its implementation in JavaScript."
-publishDate: "2023-05-26"
+publishDate: "2023-08-10"
 image: "/assets/images/posts/binary-search-mini.jpg"
 category: "thoughts"
 author: "abhinay thakur"
