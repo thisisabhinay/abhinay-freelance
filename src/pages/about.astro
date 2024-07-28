@@ -3,6 +3,7 @@ import experiences from "../data/experiences.json"
 import AboutExperience from "../components/about-experience.astro"
 import PageHeading from "../components/page-heading.astro"
 import Layout from "../layouts/main.astro"
+import Button from "../components/button.astro"
 ---
 
 <Layout title="About Me">
@@ -66,11 +67,13 @@ import Layout from "../layouts/main.astro"
         class="text-indigo-600 underline"
       >
         follow me on twitter
-      </a>, or you can send me an <a
-        href="mailto:a8h1nay@gmail.com"
-        class="text-indigo-600 underline"
-      >
-        email</a> and I'll be sure to get back to you.
+      </a>, or want to discuss a project? You can schedule a 1-on-1 meeting with me.
+
+      <Button
+        text="Schedule a meeting"
+        link="https://calendar.app.google/CrbdAVU9YpL8cQZa7"
+        target="_blank"
+      />
     </p>
   </section>
 </Layout>
