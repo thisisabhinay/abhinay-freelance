@@ -12,5 +12,5 @@ export const latestSideProjects = (
 );
 
 export const pinnedSideProjects = latestSideProjects?.filter(
-  (sideProject) => sideProject.data.pinned
+  (sideProject) => sideProject.data.pinned && !sideProject.data.draft
 );

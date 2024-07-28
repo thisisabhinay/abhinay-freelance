@@ -12,5 +12,5 @@ export const latestPortfolio = (
 );
 
 export const pinnedPortfolio = latestPortfolio?.filter(
-  (portfolioItem) => portfolioItem.data.pinned
+  (portfolioItem) => portfolioItem.data.pinned && !portfolioItem.data.draft
 );
