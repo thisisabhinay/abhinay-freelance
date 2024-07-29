@@ -5,9 +5,19 @@ interface Props {
   src: string
   alt: string
   className?: string
+  noBorder?: boolean
+  outline?: boolean
 }
 
-const { src, alt, className } = Astro.props
+const { src, alt, className, noBorder, outline } = Astro.props
+
+const borderStyle = !noBorder
+  ? "ring-2 ring-slate-100 p-3 dark:ring-slate-700"
+  : ""
+
+const outlineStyle = outline
+  ? "ring-2 ring-slate-100 p-0 dark:ring-slate-700"
+  : ""
 ---
 
 <figure class="text-center text-xs -mx-32">
@@ -17,8 +27,7 @@ const { src, alt, className } = Astro.props
     alt={alt}
     width="1920"
     height="1080"
-    class="ring-2 ring-slate-100 p-3 dark:ring-slate-700"
-    class:list={[className]}
+    class:list={[borderStyle, outlineStyle, className]}
   />
   <figcaption>
     <slot />
