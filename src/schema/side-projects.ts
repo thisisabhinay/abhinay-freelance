@@ -9,6 +9,7 @@ const sideProjectSchema = z.object({
   pinned: z.boolean().optional(),
   tags: z.array(z.string()),
   image: z.string().optional(),
+  status: z.enum(["Planning", "Backlog", "On hold", "Live", "In progress"]),
   publishDate: z.string().transform((str) =>
     new Date(str).toLocaleDateString("en-GB", {
       year: "numeric",
