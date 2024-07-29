@@ -1,5 +1,4 @@
 ---
-import { latestPortfolio } from "../utils/portfolio"
 import { latestSideProjects } from "../utils/side-projects"
 import SideProject from "../components/side-project.astro"
 import BrandSeparator from "../components/brand-separator.astro"
@@ -13,20 +12,10 @@ interface Props {
 
 const { count, company, brandLogo, className = "" } = Astro.props
 
-let portfolio
-portfolio = company
-  ? latestPortfolio.filter((project) => project.data.company === company)
-  : latestPortfolio
-
-portfolio = count ? portfolio.slice(0, count) : portfolio
-
 const sideProjects = count
   ? latestSideProjects.slice(0, count)
   : latestSideProjects
 
-const collection = sideProjects
-
-const hrefBase = "side-projects"
 ---
 
 {company ? <BrandSeparator text={company} brandLogo={brandLogo} /> : null}
@@ -35,7 +24,7 @@ const hrefBase = "side-projects"
   class:list={[className, !company ? "mt-20" : ""]}
 >
   {
-    collection.map((project: any) => {
+    sideProjects.map((project: any) => {
       return (
         <div class="py-4 first:pt-0">
           <SideProject
@@ -44,7 +33,7 @@ const hrefBase = "side-projects"
             image={project.data.image}
             company={project.data.company ?? project.data.domains}
             slug={project.slug}
-            hrefBase={hrefBase}
+            hrefBase="side-projects"
             layout="list"
           />
         </div>
