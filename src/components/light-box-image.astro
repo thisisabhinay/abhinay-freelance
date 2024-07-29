@@ -10,7 +10,7 @@ interface Props {
 const { src, alt, className } = Astro.props
 ---
 
-<div class="-mx-32">
+<figure class="text-center text-xs -mx-32">
   <Picture
     src={src}
     formats={["avif", "webp", "jpg"]}
@@ -20,4 +20,7 @@ const { src, alt, className } = Astro.props
     class="ring-2 ring-slate-100 p-3 dark:ring-slate-700"
     class:list={[className]}
   />
-</div>
+  <figcaption>
+    <slot />
+  </figcaption>
+</figure>
