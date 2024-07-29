@@ -1,0 +1,73 @@
+---
+import { Picture } from "astro:assets"
+
+const {
+  name,
+  description,
+  slug,
+  image,
+  company,
+  layout = "card",
+  hrefBase,
+} = Astro.props
+
+const baseStyle = "w-full h-full rounded-2xl"
+
+const layoutStyle: any = {
+  card: "flex flex-col gap-3",
+  list: "flex flex-row-reverse gap-3 justify-between",
+}
+
+const hoverStyle: any = {
+  card: "group-hover:shadow-neutral-100 dark:group-hover:shadow-black group-hover:border-white dark:group-hover:border-neutral-800 group-hover:shadow-lg group-hover:-translate-y-1",
+  list: "group-hover:shadow-neutral-100 dark:group-hover:shadow-black group-hover:border-white dark:group-hover:border-neutral-800 group-hover:shadow-lg group-hover:translate-x-1",
+}
+
+const coverSize: any = {
+  card: "w-full h-48 md:h-36",
+  list: "w-full h-48 md:h-44",
+}
+
+const headingStyle: any = {
+  card: "text-base line-clamp-2",
+  list: "text-lg",
+}
+
+const clampStyle: any = {
+  card: "line-clamp-5 md:line-clamp-3",
+  list: "line-clamp-4 md:line-clamp-3",
+}
+---
+
+<a
+  data-layout={layout}
+  href={`${hrefBase}/${slug}`}
+  class="relative flex flex-col w-full items-stretch group h-100 rounded-2xl"
+>
+  <div class:list={[baseStyle, layoutStyle[layout]]}>
+    <div class="block w-full">
+      <img
+        src={image}
+        class=`rounded-xl object-cover transition-all duration-300 ease-out border-2 border-solid border-transparent`
+        class:list={[hoverStyle[layout], coverSize[layout]]}
+      />
+    </div>
+    <div class="block w-full divide-y-4 divide-transparent">
+      <div
+        class="flex relative gap-2 items-start justify-start mb-0 font-semibold tracking-tight text-neutral-900 dark:text-neutral-100"
+        class:list={[headingStyle[layout]]}
+      >
+        <div class="line-clamp-2">{name}</div>
+      </div>
+      <div class="text-sm text-neutral-900 font-medium dark:text-neutral-400">
+        {company}
+      </div>
+      <div
+        class="text-sm text-neutral-600 dark:text-neutral-400"
+        class:list={[clampStyle[layout]]}
+      >
+        {description}
+      </div>
+    </div>
+  </div>
+</a>
