@@ -13,7 +13,7 @@ const {
   description,
   slug,
   image,
-  company,
+  domains,
   layout = "card",
   status,
   hrefBase,
@@ -54,12 +54,12 @@ const clampStyle: any = {
   list: "line-clamp-4 md:line-clamp-3",
 }
 
-const statusCardStyle: any = {
-  card: "block",
+const statusCardLayout: any = {
+  card: "block -mt-2",
   list: "hidden",
 }
 
-const statusListStyle: any = {
+const statusListLayout: any = {
   card: "hidden",
   list: "block",
 }
@@ -90,7 +90,7 @@ const statusListStyle: any = {
         <div class="line-clamp-2">{name}</div>
       </div>
       <div class="text-sm text-neutral-900 font-medium dark:text-neutral-400">
-        {company}
+        {domains}
       </div>
       <div
         class="text-sm text-neutral-600 dark:text-neutral-400"
@@ -98,11 +98,11 @@ const statusListStyle: any = {
       >
         {description}
       </div>
-      <div class:list={statusListStyle[layout]}>
+      <div class:list={statusListLayout[layout]}>
         <StatusTag text={status} type={statusMap[status as Status]} />
       </div>
     </div>
-    <div class:list={statusCardStyle[layout]}>
+    <div class:list={statusCardLayout[layout]}>
       <StatusTag text={status} type={statusMap[status as Status]} />
     </div>
   </div>
