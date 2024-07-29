@@ -3,7 +3,7 @@ title: "Mind Tools"
 description: "This project overviews the Phone Integration Micro Frontend, a self-contained HighLevel web app built on micro frontend architecture, managing telephony integrations and subaccounts management functionality for an Agency."
 publishDate: "2023-07-14T16:39:36.050Z"
 image: "/assets/project/hl-phone-integration-mf/cover.jpeg"
-company: "HighLevel"
+domains: "HighLevel"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 pinned: true

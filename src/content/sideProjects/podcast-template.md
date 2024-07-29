@@ -3,7 +3,7 @@ title: "Podcast template"
 description: "Automated copywriting with built-in AI & SEO."
 publishDate: "2023-07-09T12:39:36.050Z"
 image: "/assets/project/attryb-studio/cover.avif"
-company: "Attryb"
+domains: "UI Development, Template"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 pinned: false

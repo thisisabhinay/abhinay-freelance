@@ -4,7 +4,7 @@ const sideProjectSchema = z.object({
   title: z.string(),
   description: z.string(),
   author: z.string().trim(),
-  company: z.string().trim(),
+  domains: z.string().trim(),
   draft: z.boolean().optional(),
   pinned: z.boolean().optional(),
   tags: z.array(z.string()),

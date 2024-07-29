@@ -3,7 +3,7 @@ title: "Components Library"
 description: "Developed an SEO keyword visualization and analysis platform using React.js, D3.js, Node.js, and PostgreSQL, enabling users to explore and gain insights from complex keyword data through interactive visualizations."
 publishDate: "2023-07-09T12:39:36.050Z"
 image: "/assets/project/attryb-d3/cover.png"
-company: "Attryb"
+domains: "Attryb"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 pinned: true

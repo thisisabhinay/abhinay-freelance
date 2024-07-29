@@ -3,7 +3,7 @@ title: "Job board template"
 description: "This self-contained HighLevel web app, built on micro frontend architecture, offers a modular and scalable approach to manage SMS, voicemail, and compliance settings."
 publishDate: "2023-07-14T16:39:36.050Z"
 image: "/assets/project/hl-advanced-settings-mf/cover.jpeg"
-company: "HighLevel"
+domains: "HighLevel"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 pinned: true
