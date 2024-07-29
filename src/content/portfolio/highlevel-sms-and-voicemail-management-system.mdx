@@ -9,6 +9,7 @@ tags: [webdev, thoughts, coding, essay]
 pinned: false
 ---
 import Stack from "../../components/stack.astro"
+import LightBoxImage from "../../components/light-box-image.astro"
 
 ![Cover Image](/assets/project/hl-advanced-settings-mf/cover.jpeg)
 
@@ -68,33 +69,29 @@ The HighLevel SMS and Voicemail Management System boasts a range of powerful fea
 
 At the heart of our system is the SMS Provider feature, which simplifies text message communication within the HighLevel platform. We've integrated Lead Connector (LC), HighLevel's built-in SMS provider, to enable effortless sending and receiving of SMS messages. The one-click setup process we've implemented significantly reduces the technical barrier for users, allowing them to start messaging immediately without the need for complex configurations. While users still have the option to integrate external SMS providers, LC offers substantial benefits, including potential cost savings and seamless integration with other HighLevel features.
 
-<p><img src="/assets/project/hl-advanced-settings-mf/ss1.png" alt="Screenshot" class="project-screenshot"/></p>
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss1.png" alt="Screenshot" />
 
 ### Voicemail and Missed Call Settings
 
 Our voicemail settings feature allows clients to personalize their communication with callers who don't reach them directly. Users can easily upload custom voicemail greetings through our intuitive interface, with options to set different greetings for individual phone numbers or apply a universal greeting across their entire HighLevel business profile. We've also implemented a Missed Call Text Back feature, enabling users to preview and automatically send customized text messages to callers who weren't able to connect. This feature helps businesses maintain engagement and responsiveness, even when they can't answer calls in real-time.
 
-<p><img src="/assets/project/hl-advanced-settings-mf/ss2.png" alt="Screenshot" class="project-screenshot"/></p>
-
-<p><img src="/assets/project/hl-advanced-settings-mf/ss3.png" alt="Screenshot" class="project-screenshot"/></p>
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss2.png" alt="Screenshot" />
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss3.png" alt="Screenshot" />
 
 ### SMS Compliance Settings
 
 Ensuring regulatory compliance was a crucial aspect of our project. We've implemented a robust number validation feature that helps businesses maintain a good sender reputation by reducing undelivered messages. Our system checks the validity of mobile numbers before sending messages, significantly improving delivery rates. We've also built in SMS opt-out settings, which automatically include clear unsubscribe instructions in every message sent. This typically takes the form of a phrase like "Reply STOP to unsubscribe" appended to each message. Additionally, our SMS Sender Info feature ensures that each message clearly identifies the sender, whether by business name or another recognizable identifier, further enhancing transparency and compliance.
 
-<p><img src="/assets/project/hl-advanced-settings-mf/ss4.png" alt="Screenshot" class="project-screenshot"/></p>
-
-<p><img src="/assets/project/hl-advanced-settings-mf/ss5.png" alt="Screenshot" class="project-screenshot"/></p>
-
-<p><img src="/assets/project/hl-advanced-settings-mf/ss6.png" alt="Screenshot" class="project-screenshot"/></p>
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss4.png" alt="Screenshot" />
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss5.png" alt="Screenshot" />
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss6.png" alt="Screenshot" />
 
 ### Messaging Limit Settings
 
 To maintain high deliverability rates and prevent potential misuse, we've implemented sophisticated messaging limit settings. Our system applies SMS limits in two key areas. First, we've set up restrictions on the number of SMS messages a sub-account can send within a 24-hour period. This helps prevent spam and maintains overall system integrity. Second, we've implemented a monitoring system for opt-out rates. If a sub-account's opt-out rate exceeds a certain threshold (typically around 2%), the system automatically locks the account for a 24-hour period, preventing further SMS sends. This feature helps maintain a positive reputation for all HighLevel users and encourages responsible messaging practices.
 
-<p><img src="/assets/project/hl-advanced-settings-mf/ss7.png" alt="Screenshot" class="project-screenshot"/></p>
-
-<p><img src="/assets/project/hl-advanced-settings-mf/ss8.png" alt="Screenshot" class="project-screenshot"/></p>
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss7.png" alt="Screenshot" />
+<LightBoxImage src="/assets/project/hl-advanced-settings-mf/ss8.png" alt="Screenshot" />
 
 ## Outcome
 
