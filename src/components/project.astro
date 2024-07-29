@@ -46,8 +46,12 @@ const clampStyle: any = {
 >
   <div class:list={[baseStyle, layoutStyle[layout]]}>
     <div class="block w-full">
-      <img
+      <Picture
         src={image}
+        formats={["avif", "webp", "jpg"]}
+        alt="Portfolio project thumbnail"
+        width="800"
+        height="450"
         class=`rounded-xl object-cover transition-all duration-300 ease-out border-2 border-solid border-transparent`
         class:list={[hoverStyle[layout], coverSize[layout]]}
       />
