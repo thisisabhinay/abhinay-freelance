@@ -1,6 +1,6 @@
 ---
-import { pinnedPortfolio } from "../utils/portfolio"
-import Project from "../components/project.astro"
+import { pinnedSideProjects } from "../utils/side-projects"
+import SideProject from "../components/side-project.astro"
 
 interface Props {
   count: number
@@ -9,7 +9,9 @@ interface Props {
 
 const { count, className = "" } = Astro.props
 
-const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
+const sideProjects = count
+  ? pinnedSideProjects.slice(0, count)
+  : pinnedSideProjects
 ---
 
 <div
@@ -17,17 +19,17 @@ const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
   class:list={[className]}
 >
   {
-    portfolio.map((project: any) => {
+    sideProjects.map((project: any) => {
       return (
         <>
-          <Project
+          <SideProject
             name={project.data.title}
             description={project.data.description}
             image={project.data.image}
             company={project.data.company}
             slug={project.slug}
             layout="card"
-            hrefBase="portfolio"
+            hrefBase="side-projects"
           />
           <div class="h-px w-full sm:hidden md:block md:h-full md:w-px dividerline-bg last:hidden" />
         </>
