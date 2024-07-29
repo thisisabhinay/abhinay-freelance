@@ -7,6 +7,7 @@ domains: "UI Development, Template"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 pinned: false
+status: "Planning"
 ---
 
 ![Cover Image](/assets/project/attryb-studio/cover.avif)

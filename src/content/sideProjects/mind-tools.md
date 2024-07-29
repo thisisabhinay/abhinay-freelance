@@ -7,6 +7,7 @@ domains: "HighLevel"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 pinned: true
+status: "Backlog"
 ---
 
 ![Cover Image](/assets/project/hl-phone-integration-mf/cover.jpeg)

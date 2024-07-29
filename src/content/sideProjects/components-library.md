@@ -7,6 +7,7 @@ domains: "Attryb"
 author: "Abhinay Thakur"
 tags: [webdev, thoughts, coding, essay]
 pinned: true
+status: "Live"
 ---
 
 ![Cover Image](/assets/project/attryb-d3/cover.png)
