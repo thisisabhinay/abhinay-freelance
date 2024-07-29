@@ -10,25 +10,9 @@ pinned: true
 status: "In progress"
 ---
 import LightBoxImage from "../../components/light-box-image.astro"
-import Button from "../../components/button.astro"
+import LiveButtons from "../../components/live-buttons.astro"
 
-<div class="flex items-center gap-2">
-  <Button
-    text="Live Preview"
-    link="https://ecomm-stripe-demo.vercel.app/"
-    target="_blank"
-    iconRight="open-in-new"
-    class="!mt-[-1rem]"
-  />
-  <Button
-    text="GitHub Code"
-    link="https://github.com/thisisabhinay/ecomm-stripe"
-    target="_blank"
-    iconRight="github"
-    class="btn btn-secondary !mt-[-1rem]"
-  />
-</div>
-
+<LiveButtons live="https://ecomm-stripe-demo.vercel.app" github="https://github.com/thisisabhinay/ecomm-stripe" />
 <LightBoxImage src="/assets/side-project/ecomm/ecomm.png" alt="Screenshot" />
 
 ## Project Overview

@@ -1,0 +1,35 @@
+---
+import Button from "./button.astro"
+
+interface Props {
+  live?: string
+  github?: string
+}
+
+const { live, github } = Astro.props
+---
+
+<div class="flex items-center gap-2 mb-12">
+  {
+    live ? (
+      <Button
+        text="Live Preview"
+        link={live}
+        target="_blank"
+        iconRight="open-in-new"
+        class="!mt-[-1rem]"
+      />
+    ) : null
+  }
+  {
+    github ? (
+      <Button
+        text="GitHub Code"
+        link={github}
+        target="_blank"
+        iconRight="github"
+        class="btn btn-secondary !mt-[-1rem]"
+      />
+    ) : null
+  }
+</div>
