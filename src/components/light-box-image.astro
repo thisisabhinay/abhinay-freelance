@@ -1,0 +1,23 @@
+---
+import { Picture } from "astro:assets"
+
+interface Props {
+  src: string
+  alt: string
+  className?: string
+}
+
+const { src, alt, className } = Astro.props
+---
+
+<div class="-mx-32">
+  <Picture
+    src={src}
+    formats={["avif", "webp", "jpg"]}
+    alt={alt}
+    width="1920"
+    height="1080"
+    class="ring-2 ring-slate-100 p-3 dark:ring-slate-700"
+    class:list={[className]}
+  />
+</div>
