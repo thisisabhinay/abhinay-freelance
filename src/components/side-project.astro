@@ -1,5 +1,12 @@
 ---
 import { Picture } from "astro:assets"
+import StatusTag from "./status-tag.astro"
+
+type Tag = "default" | "dark" | "red" | "green" | "yellow"
+type Status = "Planning" | "Backlog" | "On hold" | "Live" | "In progress"
+type TagMap = {
+  [K in Status]: Tag
+}
 
 const {
   name,
@@ -8,10 +15,19 @@ const {
   image,
   company,
   layout = "card",
+  status,
   hrefBase,
 } = Astro.props
 
 const baseStyle = "w-full h-full rounded-2xl"
+
+const statusMap = {
+  "In progress": "default",
+  "Live": "green",
+  "Backlog": "dark",
+  "On hold": "red",
+  "Planning": "yellow",
+} as TagMap
 
 const layoutStyle: any = {
   card: "flex flex-col gap-3",
@@ -36,6 +52,16 @@ const headingStyle: any = {
 const clampStyle: any = {
   card: "line-clamp-5 md:line-clamp-3",
   list: "line-clamp-4 md:line-clamp-3",
+}
+
+const statusCardStyle: any = {
+  card: "block",
+  list: "hidden",
+}
+
+const statusListStyle: any = {
+  card: "hidden",
+  list: "block",
 }
 ---
 
@@ -72,6 +98,12 @@ const clampStyle: any = {
       >
         {description}
       </div>
+      <div class:list={statusListStyle[layout]}>
+        <StatusTag text={status} type={statusMap[status as Status]} />
+      </div>
+    </div>
+    <div class:list={statusCardStyle[layout]}>
+      <StatusTag text={status} type={statusMap[status as Status]} />
     </div>
   </div>
 </a>
