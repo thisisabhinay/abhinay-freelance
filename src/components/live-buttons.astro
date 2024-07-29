@@ -2,32 +2,34 @@
 import Button from "./button.astro"
 
 interface Props {
-  live?: string
-  github?: string
+  primary?: string
+  secondary?: string
+  iconPrimary?: string
+  iconSecondary?: string
 }
 
-const { live, github } = Astro.props
+const { primary, secondary, iconPrimary, iconSecondary } = Astro.props
 ---
 
 <div class="flex items-center gap-2 mb-12">
   {
-    live ? (
+    primary ? (
       <Button
         text="Live Preview"
-        link={live}
+        link={primary}
         target="_blank"
-        iconRight="open-in-new"
+        iconRight={iconPrimary ?? "open-in-new"}
         class="!mt-[-1rem]"
       />
     ) : null
   }
   {
-    github ? (
+    secondary ? (
       <Button
         text="GitHub Code"
-        link={github}
+        link={secondary}
         target="_blank"
-        iconRight="github"
+        iconRight={iconSecondary?? "github"}
         class="btn btn-secondary !mt-[-1rem]"
       />
     ) : null
