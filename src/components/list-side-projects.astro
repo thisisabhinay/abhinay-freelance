@@ -15,7 +15,6 @@ const { count, company, brandLogo, className = "" } = Astro.props
 const sideProjects = count
   ? latestSideProjects.slice(0, count)
   : latestSideProjects
-
 ---
 
 {company ? <BrandSeparator text={company} brandLogo={brandLogo} /> : null}
@@ -31,8 +30,9 @@ const sideProjects = count
             name={project.data.title}
             description={project.data.description}
             image={project.data.image}
-            company={project.data.company ?? project.data.domains}
+            company={project.data.domains}
             slug={project.slug}
+            status={project.data.status}
             hrefBase="side-projects"
             layout="list"
           />

@@ -12,6 +12,7 @@ const { count, className = "" } = Astro.props
 const sideProjects = count
   ? pinnedSideProjects.slice(0, count)
   : pinnedSideProjects
+
 ---
 
 <div
@@ -28,6 +29,7 @@ const sideProjects = count
             image={project.data.image}
             company={project.data.company}
             slug={project.slug}
+            status={project.data.status}
             layout="card"
             hrefBase="side-projects"
           />
