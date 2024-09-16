@@ -61,11 +61,11 @@ html.dark #darkToggle:hover .horizon {
   }
 }
 
-#landing-page #widget-music-player{
-  @apply relative z-20 top-5 -right-20
+#widget-music-player{
+  @apply relative z-20 top-5 left-20
 }
 
-#landing-page #widget-projects{
+#widget-projects{
   @apply relative z-10 top-20
 }
 

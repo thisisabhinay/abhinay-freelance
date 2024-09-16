@@ -1,43 +1,19 @@
 ---
 import HeroSection from "../components/hero-section.astro"
 import PortfolioGrid from "../components/portfolio-grid.astro"
-import Separator from "../components/separator.astro"
 import SideProjectsGrid from "../components/side-projects-grid.astro"
 import Testimonials from "../components/testimonials.astro"
 import Writings from "../components/writings.astro"
 import Layout from "../layouts/main.astro"
 
-const projects = [
-  {
-    title: "API Integration",
-    category: "Engineering",
-    url: "#",
-  },
-  {
-    title: "New Benefits Plan",
-    category: "Human Resources",
-    url: "#",
-  },
-]
 ---
 
 <Layout title="Abhinay">
-  <div
-    id="landing-page"
-    class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
-  >
+<div class="grid grid-cols-1 auto-rows-max gap-28">
     <HeroSection />
+    <PortfolioGrid count={6} />
+    <Testimonials />
+    <SideProjectsGrid count={3} />
+    <Writings />
   </div>
-
-  <Separator text="My Portfolio" />
-  <PortfolioGrid count={3} />
-
-  <Separator text="Testimonials" />
-  <Testimonials />
-
-  <Separator text="Side projects I'm working on" />
-  <SideProjectsGrid count={3} />
-
-  <Separator text="Recent Blog Posts" />
-  <Writings />
 </Layout>
