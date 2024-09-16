@@ -1,6 +1,6 @@
 ---
-import { pinnedSideProjects } from "../utils/side-projects"
 import SideProject from "../components/side-project.astro"
+import { pinnedSideProjects } from "../utils/side-projects"
 
 interface Props {
   count: number
@@ -16,7 +16,7 @@ const sideProjects = count
 ---
 
 <div
-  class="grid w-full grid-rows-1 grid-cols-1 sm:grid-cols-2 gap-7 md:grid-cols-[1fr_1px_1fr_1px_1fr]"
+  class="grid w-full grid-rows-1 grid-cols-1 sm:grid-cols-2 gap-7 md:grid-cols-3"
   class:list={[className]}
 >
   {
@@ -33,7 +33,6 @@ const sideProjects = count
             layout="card"
             hrefBase="side-projects"
           />
-          <div class="h-px w-full sm:hidden md:block md:h-full md:w-px dividerline-bg last:hidden" />
         </>
       )
     })
