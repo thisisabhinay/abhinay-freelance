@@ -63,6 +63,11 @@ const statusListLayout: any = {
   card: "hidden",
   list: "block",
 }
+
+const visibility: any = {
+  card: "!hidden",
+  list: "",
+}
 ---
 
 <a
@@ -94,15 +99,15 @@ const statusListLayout: any = {
       </div>
       <div
         class="text-sm text-neutral-600 dark:text-neutral-400"
-        class:list={[clampStyle[layout]]}
+        class:list={[clampStyle[layout], visibility[layout]]}
       >
         {description}
       </div>
-      <div class:list={statusListLayout[layout]}>
+      <div class:list={[statusListLayout[layout], visibility[layout]]}>
         <StatusTag text={status} type={statusMap[status as Status]} />
       </div>
     </div>
-    <div class:list={statusCardLayout[layout]}>
+    <div class:list={[statusCardLayout[layout], visibility[layout]]}>
       <StatusTag text={status} type={statusMap[status as Status]} />
     </div>
   </div>

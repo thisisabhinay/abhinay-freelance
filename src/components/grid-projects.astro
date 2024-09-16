@@ -1,6 +1,6 @@
 ---
-import { pinnedPortfolio } from "../utils/portfolio"
 import Project from "../components/project.astro"
+import { pinnedPortfolio } from "../utils/portfolio"
 
 interface Props {
   count: number
@@ -10,6 +10,8 @@ interface Props {
 const { count, className = "" } = Astro.props
 
 const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
+
+console.log(portfolio.map((p) => p.data.title))
 ---
 
 <div
@@ -17,9 +19,9 @@ const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
   class:list={[className]}
 >
   {
-    portfolio.map((project: any) => {
+    portfolio.map((project: any, index: number) => {
       return (
-        <>
+        <Fragment>
           <Project
             name={project.data.title}
             description={project.data.description}
@@ -29,8 +31,8 @@ const portfolio = count ? pinnedPortfolio.slice(0, count) : pinnedPortfolio
             layout="card"
             hrefBase="portfolio"
           />
-          <div class="h-px w-full sm:hidden md:block md:h-full md:w-px dividerline-bg last:hidden" />
-        </>
+          <div class="h-px w-full sm:hidden md:block md:h-full md:w-px dividerline-bg [&:nth-child(3)]:hidden [&:nth-child(6)]:hidden" />
+        </Fragment>
       )
     })
   }
