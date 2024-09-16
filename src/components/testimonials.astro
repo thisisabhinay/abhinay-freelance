@@ -1,0 +1,28 @@
+---
+import testimonials from "../data/testimonials.json"
+import TestimonialTile from "./testimonial-tile.astro"
+
+interface Props {
+  className?: string
+}
+
+const columns: any = [[], []]
+
+testimonials.forEach((testimonial, index) => {
+  columns[index % columns.length].push(testimonial)
+})
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 items-start">
+    {
+      columns.map((column: typeof testimonials, columnIndex: number) => (
+        <div data-key={columnIndex} class="grid gap-4">
+          {column.map((testimonial) => (
+            <TestimonialTile testimonial={testimonial} />
+          ))}
+        </div>
+      ))
+    }
+  </div>
+</section>
