@@ -1,7 +1,7 @@
 ---
-import { latestPortfolio } from "../utils/portfolio"
 import Project from "../components/project.astro"
-import BrandSeparator from "../components/brand-separator.astro"
+import Separator from "../components/separator.astro"
+import { latestPortfolio } from "../utils/portfolio"
 
 interface Props {
   count?: number
@@ -23,7 +23,7 @@ const collection = portfolio
 
 ---
 
-{company ? <BrandSeparator text={company} brandLogo={brandLogo} /> : null}
+{company ? <Separator text={company} brandLogo={brandLogo} /> : null}
 
 <div
   class="divide-y dividerline"

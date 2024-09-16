@@ -1,7 +1,7 @@
 ---
-import { latestSideProjects } from "../utils/side-projects"
+import Separator from "../components/separator.astro"
 import SideProject from "../components/side-project.astro"
-import BrandSeparator from "../components/brand-separator.astro"
+import { latestSideProjects } from "../utils/side-projects"
 
 interface Props {
   count?: number
@@ -17,7 +17,7 @@ const sideProjects = count
   : latestSideProjects
 ---
 
-{company ? <BrandSeparator text={company} brandLogo={brandLogo} /> : null}
+{company ? <Separator text={company} brandLogo={brandLogo} /> : null}
 <div
   class="divide-y dividerline"
   class:list={[className, !company ? "mt-20" : ""]}

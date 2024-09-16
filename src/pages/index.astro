@@ -1,10 +1,10 @@
 ---
+import HeroSection from "../components/hero-section.astro"
 import PortfolioGrid from "../components/portfolio-grid.astro"
-import SideProjectsGrid from "../components/side-projects-grid.astro"
 import Separator from "../components/separator.astro"
+import SideProjectsGrid from "../components/side-projects-grid.astro"
 import Writings from "../components/writings.astro"
 import Layout from "../layouts/main.astro"
-import HeroSection from "../components/hero-section.astro"
 
 const projects = [
   {
@@ -28,11 +28,11 @@ const projects = [
     <HeroSection />
   </div>
 
-  <Separator text="Check out my portfolio" />
+  <Separator text="My Portfolio" />
   <PortfolioGrid count={3} />
 
   <Separator text="Side projects I'm working on" />
   <SideProjectsGrid count={3} />
-  <Separator text="Some of my writing" />
+  <Separator text="Recent Blog Posts" />
   <Writings />
 </Layout>
