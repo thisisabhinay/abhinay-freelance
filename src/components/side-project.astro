@@ -1,5 +1,5 @@
 ---
-import { Picture } from "astro:assets"
+import ImageTile from "./image-tile.astro"
 import StatusTag from "./status-tag.astro"
 
 type Tag = "default" | "dark" | "red" | "green" | "yellow"
@@ -34,11 +34,6 @@ const layoutStyle: any = {
   list: "flex flex-row-reverse gap-3 justify-between",
 }
 
-const hoverStyle: any = {
-  card: "group-hover:shadow-neutral-100 dark:group-hover:shadow-black group-hover:border-white dark:group-hover:border-neutral-800 group-hover:shadow-lg group-hover:-translate-y-1",
-  list: "group-hover:shadow-neutral-100 dark:group-hover:shadow-black group-hover:border-white dark:group-hover:border-neutral-800 group-hover:shadow-lg group-hover:translate-x-1",
-}
-
 const coverSize: any = {
   card: "w-full h-48 md:h-36",
   list: "w-full h-48 md:h-44",
@@ -68,25 +63,27 @@ const visibility: any = {
   card: "!hidden",
   list: "",
 }
+
+const transitionStyle = "transition-all duration-700 ease-out"
+
+const textHoverStyle =
+  "group-hover:text-neutral-900 dark:group-hover:text-neutral-100"
 ---
 
 <a
   data-layout={layout}
   href={`${hrefBase}/${slug}`}
   class="relative flex flex-col w-full items-stretch group h-100 rounded-2xl"
+  class:list={[transitionStyle]}
 >
   <div class:list={[baseStyle, layoutStyle[layout]]}>
-    <div class="block w-full">
-      <Picture
-        src={image}
-        formats={["avif", "webp", "jpg"]}
-        alt="Side project thumbnail"
-        width="800"
-        height="450"
-        class=`rounded-xl object-cover transition-all duration-300 ease-out border-2 border-solid border-transparent`
-        class:list={[hoverStyle[layout], coverSize[layout]]}
-      />
-    </div>
+    <ImageTile
+      image={image}
+      alt="Side project thumbnail"
+      width="800"
+      height="450"
+      coverSize={coverSize[layout]}
+    />
     <div class="block w-full divide-y-4 divide-transparent">
       <div
         class="flex relative gap-2 items-start justify-start mb-0 font-semibold tracking-tight text-neutral-900 dark:text-neutral-100"
@@ -99,7 +96,7 @@ const visibility: any = {
       </div>
       <div
         class="text-sm text-neutral-600 dark:text-neutral-400"
-        class:list={[clampStyle[layout], visibility[layout]]}
+        class:list={[clampStyle[layout], visibility[layout], textHoverStyle]}
       >
         {description}
       </div>
